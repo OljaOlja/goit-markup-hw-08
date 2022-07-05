@@ -1,7 +1,5 @@
 .regular-customers {
   background-color: #ffffff;
-  padding-bottom: 94px;
-  padding-top: 94px;
 }
 .regular-customers__text {
   font-weight: 700;
@@ -13,17 +11,26 @@
   margin-bottom: 50px;
 }
 .regular-customers__list {
-  display: flex;
-  flex-direction: row;
   margin-left: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .regular-customers__item {
   width: 170px;
   height: 92px;
   background-color: #ffffff;
-  &:not(:last-child) {
-    margin-right: 30px;
+  width: 100%;
+  max-width: 210px;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+    max-width: 226px;
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+    max-width: 170px;
   }
 }
 

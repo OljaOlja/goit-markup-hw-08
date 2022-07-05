@@ -11,29 +11,25 @@
 
 .benefits__item {
   width: 100%;
+  max-width: 450px;
   @include tablet {
     width: calc((100% - 30px) / 2);
+    max-width: 354px;
   }
   @include desktop {
     width: calc((100% - 90px) / 4);
+    max-width: 270px;
   }
 }
 
 .benefits__icon {
   display: flex;
-  max-width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  @include tablet {
-    max-width: 354px;
-  }
-  @include desktop {
-    max-width: 270px;
-  }
 }
 
 .benefits__top-text {
@@ -60,11 +56,4 @@
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #757575;
-  max-width: 450px;
-  @include tablet {
-    max-width: 354px;
-  }
-  @include desktop {
-    max-width: 270px;
-  }
 }

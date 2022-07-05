@@ -1,8 +1,8 @@
 .about {
-  @include mobile {
+  @media screen and (max-width: 480px) {
     display: none;
   }
-  @include tablet {
+  @include mobile {
     display: none;
   }
   @include desktop {
