@@ -844,12 +844,11 @@ body {
 }
 
 .contact {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .contact {
@@ -862,6 +861,7 @@ body {
     display: block;
     margin-left: 0px;
     margin-bottom: 0px;
+    text-align: left;
   }
 }
 
@@ -921,6 +921,7 @@ body {
 .soc {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .soc {
