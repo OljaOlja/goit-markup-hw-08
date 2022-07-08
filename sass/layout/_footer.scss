@@ -193,6 +193,7 @@
 .subscribe__input {
   width: 450px;
   height: 50px;
+  flex-grow: 1;
   @include desktop {
     width: 358px;
   }

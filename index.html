@@ -24,7 +24,7 @@
   <body>
     <!-- Хедер -->
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <a href="" lang="en" class="logo link"
           ><span class="logo__accent">Web</span>Studio</a
         >
@@ -89,14 +89,20 @@
           </div>
 
           <div class="mob-menu__bottom">
-            <div class="mob-connect">
-              <a href="tel:+380961111111" class="mob-connect__tel link"
-                >+38 096 111 11 11</a
-              >
-              <a href="mailto:info@devstudio.com" class="mob-connect__mail link"
-                >info@devstudio.com</a
-              >
-            </div>
+            <ul class="mob-connect__list list">
+              <li class="mob-connect__item">
+                <a href="tel:+380961111111" class="mob-connect__tel link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-connect__mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
 
             <ul class="mob-soc__list list">
               <li class="mob-soc__item">
@@ -784,17 +790,21 @@
               value="true"
               class="modal-check visually-hidden"
             />
-            <label for="privacy" class="check-text"
-              >Соглашаюсь с рассылкой и принимаю<a href="" class="check-link"
-                >Условия договора</a
-              ></label
-            >
+            <span class="check-text-wrap">
+              <label for="privacy" class="check-text"
+                >Соглашаюсь с рассылкой и принимаю<a href="" class="check-link"
+                  >Условия договора</a
+                ></label
+              >
+            </span>
           </div>
 
           <button type="submit" class="submit-btn">Отправить</button>
         </form>
       </div>
     </div>
+
+    <!-- Скрипты -->
 
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
