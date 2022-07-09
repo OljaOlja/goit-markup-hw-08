@@ -638,6 +638,7 @@ body {
 }
 
 .mob-menu__link {
+  font-style: normal;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
@@ -653,6 +654,7 @@ body {
 }
 
 .mob-connect__tel {
+  font-style: normal;
   font-size: 34px;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
@@ -683,6 +685,7 @@ body {
 }
 
 .mob-soc__link {
+  font-style: normal;
   font-size: 18px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
@@ -915,8 +918,8 @@ body {
 
 .team__text {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -925,6 +928,8 @@ body {
 @media screen and (min-width: 1200px) {
   .team__text {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.1666666667;
   }
 }
 
@@ -1023,12 +1028,19 @@ body {
 
 .regular-customers__text {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .regular-customers__text {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
 }
 
 .regular-customers__list {
@@ -1250,10 +1262,14 @@ body {
 .subscribe {
   margin: 0 auto;
   margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
@@ -1285,12 +1301,17 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__title {
+    text-align: start;
+  }
 }
 
 .subscribe__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
-  flex-grow: 1;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -1299,11 +1320,16 @@ body {
   padding-left: 16px;
   align-items: center;
   color: rgba(255, 255, 255, 0.6);
-  margin-right: 12px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe__input {
     width: 358px;
+    margin-right: 12px;
   }
 }
 .subscribe__input::placeholder {
@@ -1323,6 +1349,7 @@ body {
   justify-content: center;
   position: relative;
   padding: 10px 62px 10px 29px;
+  margin: 0 auto;
   margin-top: 20px;
   width: 200px;
   height: 50px;
