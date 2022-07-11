@@ -203,8 +203,9 @@
 
 .mob-menu__link {
   font-style: normal;
+  font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: calc(47 / 40);
   letter-spacing: 0.02em;
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -219,6 +220,7 @@
 }
 .mob-connect__tel {
   font-style: normal;
+  font-weight: 500;
   font-size: 34px;
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
@@ -228,17 +230,20 @@
 }
 
 .mob-connect__mail {
+  font-style: normal;
+  font-weight: 500;
   font-size: 24px;
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
   color: #757575;
   display: block;
-  margin-bottom: 64px;
+  // margin-bottom: 64px;
 }
 
 .mob-soc__list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 64px;
   gap: 10px;
 }
 
@@ -250,6 +255,7 @@
 
 .mob-soc__link {
   font-style: normal;
+  font-weight: 500;
   font-size: 18px;
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
